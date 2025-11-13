@@ -107,7 +107,7 @@ python -m stream_bench.pipelines.run_bench \
 
 ------------------------
 ### References
-[https://github.com/stream-bench/stream-bench](https://github.com/stream-bench/stream-bench)    
-[https://arxiv.org/abs/2406.08747](https://arxiv.org/abs/2406.08747)    
-[https://huggingface.co/](https://huggingface.co/)
-[https://github.com/manjookim/streambench](https://github.com/manjookim/streambench)
+-[https://github.com/stream-bench/stream-bench](https://github.com/stream-bench/stream-bench)    
+-[https://arxiv.org/abs/2406.08747](https://arxiv.org/abs/2406.08747)    
+-[https://huggingface.co/](https://huggingface.co/)    
+-[https://github.com/manjookim/streambench](https://github.com/manjookim/streambench)
