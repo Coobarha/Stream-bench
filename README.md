@@ -100,7 +100,7 @@ llama 로컬 서버가 백그라운드에서 실행되고 있는 상태로 새�
 # 가상환경 활성화 후 레포 디렉토리에서:
 cd ~/streambench/stream-bench
 python -m stream_bench.pipelines.run_bench \
-  --agent_cfg configs/agent/zeroshot.yml \
+  --agent_cfg configs/agent/llama.yml \
   --bench_cfg configs/bench/ddxplus.yml \
   --use-wandb   #(W&B 사용시)
 ```
