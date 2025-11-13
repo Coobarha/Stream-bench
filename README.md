@@ -74,7 +74,7 @@ pip install -r requirements.txt
 - `configs/agent/llama.yml` 파일 생성 및 수정
 
 ```
-cp zeroshot.yml llama.yml
+cp configs/agent/zeroshot.yml configs/agent/llama.yml
 ```
 
 ```
@@ -101,7 +101,8 @@ llama 로컬 서버가 백그라운드에서 실행되고 있는 상태로 새�
 cd ~/streambench/stream-bench
 python -m stream_bench.pipelines.run_bench \
   --agent_cfg configs/agent/zeroshot.yml \
-  --bench_cfg configs/bench/ddxplus.yml
+  --bench_cfg configs/bench/ddxplus.yml \
+  --use-wandb   #(W&B 사용시)
 ```
 
 ------------------------
