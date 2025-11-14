@@ -62,7 +62,7 @@ git clone https://github.com/stream-bench/stream-bench
 ```
 wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-aarch64.sh
 bash Miniforge3-Linux-aarch64.sh
-   
+conda create -n stream-bench python=3.10
 conda activate stream-bench
 ```
 
