@@ -102,7 +102,7 @@ cd ~/streambench/stream-bench
 python -m stream_bench.pipelines.run_bench \
   --agent_cfg configs/agent/llama.yml \
   --bench_cfg configs/bench/ddxplus.yml \
-  --use-wandb   #(W&B 사용시)
+  --use_wandb   #(W&B 사용시)
 ```
 
 ------------------------
