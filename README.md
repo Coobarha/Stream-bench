@@ -66,7 +66,36 @@ conda create -n stream-bench python=3.10
 conda activate stream-bench
 ```
 
-- 필요한 패키지 다운로드 
+- 필요한 패키지 다운로드
+edge에서는 별도의 파일 내부 주석처리 필요
+```
+vi requirements.txt
+```
+```
+# ... (앞부분 동일)
+
+# ML/DL
+# numpy==1.23.5  <-- 버전 고정 해제 (Jetson용 Torch가 요구하는 버전과 충돌 가능성 높음)
+# torch          <-- 주석 필수! (pip로 받으면 CPU 버전이나 호환 안 되는 버전이 깔림)
+gensim
+xgboost==1.6.2
+faiss-cpu
+# tensorflow     <-- 주석 필수! (NVIDIA 최적화 버전을 따로 깔아야 함)
+statsmodels
+transformers
+scikit-learn
+
+# ... (중간 동일)
+
+# Utility functions
+tqdm
+colorama
+jsonlines
+func_timeout
+ipykernel
+# bitsandbytes   <-- 주석 필수! (ARM 아키텍처용으로 따로 빌드해야 함, 그냥 깔면 에러 남)
+accelerate
+```
 ```
 pip install -r requirements.txt
 ```
